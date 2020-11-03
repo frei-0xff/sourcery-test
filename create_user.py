@@ -47,8 +47,7 @@ def get_user_name(site_name):
 
 def generate_password(length=15):
     alphabet = string.ascii_letters + string.digits
-    password = "".join(secrets.choice(alphabet) for i in range(length))
-    return password
+    return "".join(secrets.choice(alphabet) for i in range(length))
 
 
 def get_sha512_hash(password):
